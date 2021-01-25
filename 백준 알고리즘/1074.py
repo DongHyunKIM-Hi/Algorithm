@@ -21,4 +21,4 @@ def solve( n,x,y):
         result +=1
         return
     solve(n/2,x,y)
-    sol
+    
