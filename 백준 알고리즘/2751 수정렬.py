@@ -1,15 +1,6 @@
 num = int(input())
-test = list()
-for index in range(num):
-    temp = int(input())
-    test.append(temp)
+test=[int(input()) for _ in range(num)]
+result = list(set(test))
 
-def qsort(data):
-    if len(data) <= 1:
-        return data
-    middle = data[0]
-    left = [index for index in data if middle > index]
-    right = [index for index in data if middle < index]
-    return qsort(left) + [middle] + qsort(right) 
-
-qsort(test)
+for a in result:
+    print(a) 
